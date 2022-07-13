@@ -28,7 +28,7 @@ html, body {
     bottom: 26%;
     left: 27%;
 
-    animation: hourspin 10000ms linear;
+    animation: hourspin 16000ms forwards;
 }
 
 /* Min hand */
@@ -40,8 +40,6 @@ html, body {
     left: 27%;
 
     animation: minspin 10000ms linear;
-    /* animation-delay: 10s; */
-
 }
 
     
