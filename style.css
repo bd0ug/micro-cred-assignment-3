@@ -21,31 +21,37 @@ html, body {
 
 }
 
-/* Minute hand */
+/* Hour hand */
 .hand1 {
     transform-origin: 0%;
     position: absolute;
-    bottom: 25%;
+    bottom: 26%;
     left: 27%;
 
-    animation: spin 3600ms infinite linear;
+    animation: hourspin 10000ms linear;
 }
 
-/* Seconds hand */
+/* Min hand */
 .hand2 {
     transform-origin: 0%;
     transform: rotate(-90deg);
     position: absolute;
-    bottom: 25%;
+    bottom: 26%;
     left: 27%;
 
-    animation: spin 60s infinite linear;
+    animation: minspin 10000ms linear;
+    /* animation-delay: 10s; */
+
 }
 
     
 
-@keyframes spin {
-    100%{transform:rotate(360deg)}  
+@keyframes minspin {
+    100%{transform:rotate(270deg)}  
+}
+
+@keyframes hourspin {
+    100%{transform:rotate(27deg)}  
 }
 
 /*  The Message Box */
